@@ -8,7 +8,6 @@ const makeTransaction = transaction => {
     const canProcess = Math.random() > 0.3;
     setTimeout(() => {
       if (canProcess) {
-        console.log(delay);
         resolve([transaction.id, delay]);
       }
       reject(transaction.id);
